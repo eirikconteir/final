@@ -1,6 +1,4 @@
 import React, { ChangeEvent, FormEvent } from "react";
-import { StringParam, useQueryParam } from "use-query-params";
-import { referenceSets } from "../config";
 import { IBranch } from "../store";
 
 type FormProps = {
@@ -28,8 +26,6 @@ const Form = ({
   referenceSet,
   query,
 }: FormProps) => {
-  const [branch] = useQueryParam("b", StringParam);
-  const [host] = useQueryParam("h", StringParam);
   return (
     <form onSubmit={handleFormSubmit}>
       <div className="form-row">

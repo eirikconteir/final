@@ -1,17 +1,11 @@
 import React from "react";
-import { Link } from "react-router-dom";
 
 type HeaderProps = {
   scope: string;
 };
 
 const Header = ({ scope }: HeaderProps) => {
-  const itemClassNames = (link: string) => {
-    if (link === scope) {
-      return "nav-item active";
-    }
-    return "nav-item";
-  };
+
   return (
     <header className="row">
       <div>
