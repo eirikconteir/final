@@ -1,5 +1,6 @@
 import { apiOptions, handleResponse } from "../api";
 import { limit } from "../config";
+import { defaultRefset } from "../config";
 
 interface ITerm {
   term: string;
@@ -35,7 +36,7 @@ export const fetchConcepts = (
   url.searchParams.append("language", "nn");
   url.searchParams.append("language", "en");
   url.searchParams.set("conceptActive", "true");
-  url.searchParams.set("conceptRefset", referenceSet);
+  url.searchParams.set("conceptRefset", defaultRefset);
   url.searchParams.set("term", query);
   return fetch(url.toString(), apiOptions).then((response) =>
     handleResponse<IConceptResult>(response),

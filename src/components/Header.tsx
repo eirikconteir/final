@@ -15,31 +15,9 @@ const Header = ({ scope }: HeaderProps) => {
   return (
     <header className="row">
       <div>
-      <h1>SNOMED refset-søk</h1>
+      <h1>ICD-10 Psykiske lidelser og atferdsforstyrrelser (F00-F99)</h1>
     </div>
-      <div className="col">
-        <nav className="navbar navbar-expand mb-3">
-          <ul className="navbar-nav mr-auto">
-            <li className={itemClassNames("")}>
-              <Link className="nav-link" to="/">
-                All
-              </Link>
-            </li>
-            <li className={itemClassNames("trial")}>
-              <Link className="nav-link" to="/?scope=trial">
-                Clinical Trialz
-              </Link>
-            </li>
-            {false && (
-              <li className={itemClassNames("helsenorge")}>
-                <Link className="nav-link" to="/?scope=helsenorge">
-                  Helsenorge
-                </Link>
-              </li>
-            )}
-          </ul>
-        </nav>
-      </div>
+     
     </header>
   );
 };

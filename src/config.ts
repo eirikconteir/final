@@ -3,68 +3,28 @@ export const clinicalTrialsUrl =
 
 export const episerverUrl = "http://localhost:51338/sokeside/snomed";
 
-export const defaultBranch = "MAIN/SNOMEDCT-NO-EXTENDED";
+export const defaultBranch = "MAIN/MAP";
+
+export const defaultRefset = "1291000202106";
+
 
 export const hosts = [
-  "https://snowstorm.rundberg.no",
-  "https://terminologi.ehelse.no",
+  "https://snowstorm.rundberg.no"
 ];
 
 export const codeSystems = [
   {
-    branch: "MAIN/ICPC2",
-    id: "450993002",
-    title: "ICPC-2",
-  },
-  {
-    branch: "MAIN",
-    id: "447562003",
-    title: "ICD-10",
-  },
-  {
     branch: "MAIN/MAP",
-    id: "2041000202101",
-    title: "ATC",
-  },
+    id: "1291000202106",
+    title: "ICD-10",
+  }
 ];
 
 export const referenceSets = [
-  {
-    id: "",
-    title: "[Not specified]",
-  },
-  {
-    id: "1981000202104",
-    title: "Målgruppe",
-  },
-  {
-    id: "1991000202102",
-    title: "Sykdommer",
-  },
-  {
-    id: "1971000202101",
-    title: "Behandlinger",
-  },
-  {
-    id: "2001000202104",
-    title: "Symptomer/plager",
-  },
-  {
-    id: "1271000202107",
-    title: "Råd for god helse",
-  },
-  {
+ {
     id: "1291000202106",
-    title: "Infeksjonssykdommer følsomme for antibiotika",
-  },
-  {
-    id: "2041000202101",
-    title: "Kristines hipster refset",
-  },
-  {
-    id: "1311000202107",
-    title: "Virkestoff med antibakteriell eller antimykotisk effekt",
-  },
+    title: "ICD-10",
+  }
 ];
 
 export const limit = "10";
